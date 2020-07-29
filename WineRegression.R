@@ -54,3 +54,4 @@ SSE = sum((wineTest$Price - predictTest)^2)
 SST = sum((wineTest$Price - mean(wine$Price))^2)
 print(1 - SSE/SST)
 
+saveRDS(model4,'WineModel.rds')
